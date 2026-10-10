@@ -1,0 +1,38 @@
+name: deploy
+on:
+  push:
+    branches: [main]
+  workflow_call:
+  workflow_dispatch:
+concurrency:
+  group: pages
+  cancel-in-progress: true
+permissions:
+  contents: write # push the built site to the gh-pages branch
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      # Pages serves the site at /<repo-name>/, so assets must resolve there.
+      # VITE_PICKS_API_URL (repo variable) points the community-picks panel at the
+      # deployed Worker; if it is unset the panel is simply not rendered.
+      - run: npm ci && BASE_PATH="/${GITHUB_REPOSITORY#*/}/" npm run build
+        env:
+          VITE_PICKS_API_URL: ${{ vars.PICKS_API_URL }}
+
+      # Publish via a branch instead of actions/upload-pages-artifact: the artifact
+      # route counts against the org-wide Actions artifact storage quota and fails
+      # with "Artifact storage quota has been hit" when other repos fill it.
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: gh-pages
+          force_orphan: true # keep gh-pages to a single commit

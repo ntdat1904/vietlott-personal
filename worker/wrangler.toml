@@ -1,0 +1,20 @@
+name = "power655-community-picks"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+# Hourly purge of tickets older than the 24h window.
+[triggers]
+crons = ["0 * * * *"]
+
+[vars]
+# Comma-separated origins allowed to call the API (CORS). Add your GitHub Pages origin.
+ALLOWED_ORIGINS = "http://localhost:5173,http://127.0.0.1:5173,http://localhost:4173,http://127.0.0.1:4173"
+
+# IP_SALT is a secret: `npx wrangler secret put IP_SALT` (local dev reads worker/.dev.vars).
+
+[[d1_databases]]
+binding = "DB"
+database_name = "community-picks"
+# Replace with the id printed by `npx wrangler d1 create community-picks`.
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"

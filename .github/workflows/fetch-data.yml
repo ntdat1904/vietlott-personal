@@ -1,0 +1,38 @@
+name: fetch-data
+on:
+  schedule:
+    - cron: '0 14 * * *' # once per day at 21:00 ICT (well after the ~18:00 draw)
+  workflow_dispatch:
+    inputs:
+      backfill_days:
+        description: 'Repair only: re-fetch N days (0 = normal run)'
+        default: '0'
+permissions:
+  contents: write
+concurrency:
+  group: fetch-data
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run pipeline -- --backfill-days=${{ inputs.backfill_days || 0 }}
+      - name: Commit data files
+        run: |
+          git config user.name "data-bot"
+          git config user.email "data-bot@users.noreply.github.com"
+          git add public/data data/fetch-log.json
+          git diff --cached --quiet || git commit -m "data: update $(date -u +%F)"
+          git push
+
+  deploy:
+    needs: fetch
+    permissions:
+      contents: write
+    uses: ./.github/workflows/deploy.yml

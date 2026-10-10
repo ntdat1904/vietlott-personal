@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "draws": [
+    {
+      "drawId": "01408",
+      "date": "2026-10-08",
+      "numbers": [
+        1,
+        7,
+        12,
+        27,
+        31,
+        52
+      ],
+      "bonus": 6,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01408&nocatche=1",
+      "jackpot1Vnd": 129672825150,
+      "jackpot2Vnd": 3800633150,
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    },
+    {
+      "drawId": "01407",
+      "date": "2026-10-06",
+      "numbers": [
+        6,
+        7,
+        18,
+        20,
+        24,
+        27
+      ],
+      "bonus": 1,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01407&nocatche=1",
+      "jackpot1Vnd": 122467126800,
+      "jackpot2Vnd": 4771759950,
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    },
+    {
+      "drawId": "01406",
+      "date": "2026-10-03",
+      "numbers": [
+        7,
+        11,
+        13,
+        16,
+        18,
+        54
+      ],
+      "bonus": 41,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01406&nocatche=1",
+      "jackpot1Vnd": 112784140200,
+      "jackpot2Vnd": 3695872550,
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    },
+    {
+      "drawId": "01405",
+      "date": "2026-10-01",
+      "numbers": [
+        4,
+        5,
+        13,
+        34,
+        52,
+        55
+      ],
+      "bonus": 15,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01405&nocatche=1",
+      "jackpot1Vnd": 106521287250,
+      "jackpot2Vnd": 1869544050,
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    },
+    {
+      "drawId": "01404",
+      "date": "2026-09-29",
+      "numbers": [
+        2,
+        4,
+        13,
+        17,
+        35,
+        36
+      ],
+      "bonus": 11,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01404&nocatche=1",
+      "jackpot1Vnd": 99869494350,
+      "jackpot2Vnd": 4454726850,
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    },
+    {
+      "drawId": "01403",
+      "date": "2026-09-26",
+      "numbers": [
+        14,
+        18,
+        21,
+        38,
+        48,
+        52
+      ],
+      "bonus": 49,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01403&nocatche=1",
+      "jackpot1Vnd": 91387533000,
+      "jackpot2Vnd": 3512286700,
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    },
+    {
+      "drawId": "01402",
+      "date": "2026-09-24",
+      "numbers": [
+        1,
+        13,
+        23,
+        25,
+        26,
+        28
+      ],
+      "bonus": 27,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01402&nocatche=1",
+      "jackpot1Vnd": 86776952700,
+      "jackpot2Vnd": 5462262200,
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    },
+    {
+      "drawId": "01401",
+      "date": "2026-09-22",
+      "numbers": [
+        1,
+        3,
+        9,
+        11,
+        41,
+        46
+      ],
+      "bonus": 10,
+      "sourceUrl": "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/655?id=01401&nocatche=1",
+      "fetchedAt": "2026-10-10T04:29:30.796Z"
+    }
+  ]
+}

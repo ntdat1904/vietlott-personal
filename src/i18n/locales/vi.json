@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Power 6/55 Insights"
+  },
+  "header": {
+    "title": "Power 6/55 Insights",
+    "subtitle": "Kết quả 30 ngày, thống kê tần suất & gợi ý mỗi ngày",
+    "liveData": "Dữ liệu thật",
+    "refresh": "Làm mới",
+    "lastUpdated": "Cập nhật lúc: {{time}}",
+    "logoTooltip": "Vietlott Power 6/55",
+    "liveDataTooltip": "Kết quả được lấy từ vietlott.vn, trang chính thức của nhà điều hành",
+    "refreshTooltip": "Tải lại các tệp kết quả đã công bố",
+    "refreshing": "Đang làm mới…"
+  },
+  "share": {
+    "tooltip": "Hiện mã QR của trang này",
+    "title": "Mở trên điện thoại",
+    "subtitle": "Quét mã QR để mở trang này",
+    "qrAlt": "Mã QR dẫn tới {{url}}",
+    "close": "Đóng",
+    "copy": "Sao chép liên kết",
+    "copied": "Đã sao chép",
+    "download": "Tải PNG",
+    "localhostNote": "Địa chỉ này chỉ dùng được trên máy tính này. Để quét bằng điện thoại cùng Wi-Fi, hãy chạy dev server với --host và mở trang qua IP mạng LAN của máy."
+  },
+  "language": {
+    "vi": "VI",
+    "en": "EN",
+    "switcher": "Ngôn ngữ"
+  },
+  "stats": {
+    "analyzedDraws": "Kỳ quay phân tích",
+    "lastThirtyDays": "30 ngày gần nhất",
+    "latestDraw": "Kỳ quay mới nhất",
+    "jackpot1": "Jackpot 1",
+    "jackpot1Hint": "Trùng cả 6 số",
+    "jackpot2": "Jackpot 2",
+    "jackpot2Hint": "Trùng 5 số + số đặc biệt"
+  },
+  "hero": {
+    "title": "Gợi ý hôm nay theo từng hạng giải",
+    "orderNote": "sắp xếp từ Jackpot 1 xuống hạng giải dễ trúng nhất",
+    "info": "Mỗi hạng giải được dựng một bộ 6 số dựa trên tần suất xuất hiện trong 30 ngày gần nhất. Gợi ý được tính lại mỗi ngày và không làm tăng cơ hội trúng thưởng.",
+    "smallSample": "Chỉ có {{count}} kỳ quay trong 30 ngày gần nhất nên các số gợi ý có thể thay đổi nhiều giữa các ngày.",
+    "iconTooltip": "Bộ số gợi ý hôm nay cho từng hạng giải"
+  },
+  "tier": {
+    "conditionLabel": "Điều kiện",
+    "prizeLabel": "Giải thưởng",
+    "oddsLabel": "Xác suất",
+    "fromAmount": "Từ {{amount}}",
+    "third": {
+      "name": "Giải Ba",
+      "short": "Trùng 3 số",
+      "rule": "Trùng 3 trong 6 số",
+      "strategy": "Nhóm số nóng: 6 số có tần suất cao nhất trong nhóm 12 số dẫn đầu.",
+      "tooltip": "Trùng 3 trong 6 số chính. Giải thưởng: 50.000đ. Các quả bóng viền đỏ là 3 số xuất hiện nhiều nhất trong 30 ngày qua."
+    },
+    "second": {
+      "name": "Giải Nhì",
+      "short": "Trùng 4 số",
+      "rule": "Trùng 4 trong 6 số",
+      "strategy": "Nóng + ấm: 4 số thuộc nhóm 12 số dẫn đầu, cộng 2 số có tần suất trung bình.",
+      "tooltip": "Trùng 4 trong 6 số chính. Giải thưởng: 500.000đ. Các quả bóng viền đỏ là 4 số có điểm tần suất và độ mới cao nhất."
+    },
+    "first": {
+      "name": "Giải Nhất",
+      "short": "Trùng 5 số",
+      "rule": "Trùng 5 trong 6 số",
+      "strategy": "Nóng + lâu chưa về: 3 số nóng, 2 số vắng mặt lâu nhất, 1 số chọn theo tần suất.",
+      "tooltip": "Trùng 5 trong 6 số chính. Giải thưởng: 40.000.000đ. Các quả bóng viền đỏ kết hợp tần suất, độ mới và mức độ đi cùng nhau."
+    },
+    "jackpot2": {
+      "name": "Jackpot 2",
+      "short": "Trùng 5 số + số đặc biệt",
+      "rule": "Trùng 5 số + số đặc biệt",
+      "strategy": "Cân bằng: 3 lẻ / 3 chẵn và 3 nhỏ / 3 lớn, kèm số đặc biệt xuất hiện nhiều nhất.",
+      "tooltip": "Trùng 5 số chính + số đặc biệt (Power). Từ 3 tỷ đồng. Quả bóng vàng là số đặc biệt xuất hiện nhiều nhất trong 30 ngày qua."
+    },
+    "jackpot1": {
+      "name": "Jackpot 1",
+      "short": "Trùng cả 6 số",
+      "rule": "Trùng cả 6 số",
+      "strategy": "Dàn đều: chọn theo tần suất và độ cân bằng, tổng các số nằm trong khoảng thường gặp.",
+      "tooltip": "Trùng cả 6 số chính. Từ 30 tỷ đồng. Cả 6 quả bóng kết hợp tần suất, độ mới và mức độ đi cùng nhau."
+    },
+    "badgeTooltip": "Hạng {{order}}/5 ({{badge}}), xếp theo giá trị giải thưởng"
+  },
+  "top6": {
+    "title": "Top 6 số xuất hiện nhiều nhất",
+    "subtitle": "Trong {{count}} kỳ quay gần nhất",
+    "info": "Chỉ dựa trên dữ liệu 30 ngày gần nhất, không lọc theo khoảng thời gian khác. Với khoảng 13 kỳ quay, việc bằng điểm và thay đổi mạnh giữa các ngày là bình thường.",
+    "tieNote": "Khi bằng nhau, số về gần đây hơn được xếp trên. Chọn một số để lọc bảng lịch sử.",
+    "iconTooltip": "Sáu con số được quay trúng nhiều nhất"
+  },
+  "chart": {
+    "frequencyTitle": "Tần suất các số",
+    "frequencySubtitle": "Số lần xuất hiện của từng số 01–55. Bấm vào cột để lọc lịch sử.",
+    "frequencyInfo": "Số liệu chỉ tính trong 30 ngày gần nhất. Tần suất mô tả quá khứ, không làm một con số dễ về hơn.",
+    "frequencyTooltip": "Số {{n}}: {{count}} lần, gần nhất {{lastSeen}}",
+    "expectedShort": "TB",
+    "legendTop6": "Top 6",
+    "legendOthers": "Các số khác",
+    "legendActive": "Đang lọc",
+    "legendExpected": "Trung bình kỳ vọng",
+    "dataset": {
+      "main": "Số chính",
+      "bonus": "Số đặc biệt"
+    },
+    "sort": {
+      "natural": "1→55",
+      "frequency": "Theo tần suất"
+    },
+    "iconTooltip": "Số lần mỗi con số được quay trúng trong khoảng dữ liệu đã lưu"
+  },
+  "community": {
+    "title": "Số cộng đồng chọn (24h)",
+    "subtitle": "{{count}} vé được gửi trong 24 giờ qua",
+    "subtitleLoading": "Đang tải số cộng đồng chọn…",
+    "info": "Chọn 6 số của bạn và gửi đi. Mỗi địa chỉ IP giữ một vé: gửi lại sẽ thay thế vé trước đó. Bảng xếp hạng tính tất cả vé được gửi trong 24 giờ qua. IP của bạn chỉ được lưu dưới dạng mã băm có salt.",
+    "iconTooltip": "Các số người chơi khác đã chọn trong 24 giờ qua",
+    "pickTitle": "Chọn 6 số (01–55)",
+    "selected": "Đã chọn {{count}}/{{max}}",
+    "quickPick": "Chọn nhanh",
+    "clear": "Xóa",
+    "submit": "Gửi vé",
+    "replace": "Thay vé của tôi",
+    "submitting": "Đang gửi…",
+    "submitted": "Đã lưu vé của bạn.",
+    "submitError": "Không gửi được: {{error}}",
+    "yourTicket": "Vé của bạn (IP này)",
+    "submittedAt": "Gửi lúc {{time}}",
+    "replaceNote": "Gửi vé mới sẽ thay thế vé này và tính lại 24 giờ.",
+    "topTitle": "Top 6 số được chọn nhiều nhất",
+    "votes_other": "lượt",
+    "empty": "Chưa có vé nào trong 24 giờ qua. Hãy là người đầu tiên!",
+    "loadError": "Không tải được số cộng đồng chọn.",
+    "topNote": "% = tỷ lệ vé có chứa số đó. Nếu bằng nhau, số nhỏ hơn xếp trước. Số được chọn nhiều không có khả năng trúng cao hơn."
+  },
+  "table": {
+    "title": "Lịch sử kết quả",
+    "showing": "Hiển thị {{shown}}/{{total}} kỳ quay",
+    "drawId": "Kỳ quay",
+    "date": "Ngày",
+    "numbers": "Số trúng thưởng",
+    "bonus": "Số đặc biệt",
+    "jackpot1": "Jackpot 1",
+    "jackpot2": "Jackpot 2",
+    "search": "Lọc theo số",
+    "searchPlaceholder": "Lọc theo số, ví dụ 7 23",
+    "filterContains": "Chứa số",
+    "rangeDays": "{{count}} ngày",
+    "newestFirst": "Mới nhất trước",
+    "oldestFirst": "Cũ nhất trước",
+    "match": {
+      "any": "Có bất kỳ",
+      "all": "Có tất cả"
+    },
+    "empty": "Không có kỳ quay nào khớp bộ lọc hiện tại.",
+    "iconTooltip": "Toàn bộ kỳ quay đã lưu, mới nhất trước",
+    "sortTooltip": "Đổi giữa mới nhất và cũ nhất trước"
+  },
+  "banner": {
+    "stale": "Kết quả có thể chưa được cập nhật.",
+    "error": "Không tải được kết quả mới nhất. Đang hiển thị dữ liệu đã lưu.",
+    "retry": "Thử lại"
+  },
+  "state": {
+    "loading": "Đang tải kết quả…"
+  },
+  "disclaimer": "Chỉ phục vụ mục đích giải trí và thống kê. Đây không phải trang web chính thức của Vietlott. Mỗi kỳ quay Power 6/55 là độc lập và ngẫu nhiên: tần suất trong quá khứ không làm thay đổi xác suất của bất kỳ con số nào, và các gợi ý ở đây không làm tăng cơ hội trúng thưởng. Hãy đối chiếu kết quả trên kênh chính thức và chơi có trách nhiệm (18+).",
+  "footer": {
+    "dataSource": "Nguồn dữ liệu: vietlott.vn",
+    "responsibleGaming": "Chơi có trách nhiệm, 18+.",
+    "refreshedAt": "Đã làm mới lúc: {{time}}"
+  },
+  "aria": {
+    "numberBall": "Số {{n}}, {{role}}",
+    "roleCore": "số chủ lực",
+    "roleFiller": "số bổ sung",
+    "roleBonus": "số đặc biệt",
+    "aboutTier": "Giới thiệu về {{tier}}"
+  },
+  "rationale": {
+    "topFreq": "Số chủ lực = {{k}} số xuất hiện nhiều nhất trong {{draws}} kỳ quay gần nhất ({{nums}})."
+  },
+  "disclaimer_icon": "Thông tin quan trọng"
+}

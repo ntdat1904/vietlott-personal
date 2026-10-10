@@ -1,0 +1,190 @@
+{
+  "app": {
+    "title": "Power 6/55 Insights"
+  },
+  "header": {
+    "title": "Power 6/55 Insights",
+    "subtitle": "30-day results, frequency stats & daily suggestions",
+    "liveData": "Live data",
+    "refresh": "Refresh",
+    "lastUpdated": "Last updated: {{time}}",
+    "logoTooltip": "Vietlott Power 6/55",
+    "liveDataTooltip": "Results are scraped from vietlott.vn, the official operator site",
+    "refreshTooltip": "Re-fetch the published results files",
+    "refreshing": "Refreshing…"
+  },
+  "share": {
+    "tooltip": "Show a QR code for this page",
+    "title": "Open on your phone",
+    "subtitle": "Scan the QR code to open this page",
+    "qrAlt": "QR code linking to {{url}}",
+    "close": "Close",
+    "copy": "Copy link",
+    "copied": "Copied",
+    "download": "Download PNG",
+    "localhostNote": "This address only works on this computer. To scan from a phone on the same Wi-Fi, run the dev server with --host and open the page via this computer's LAN IP."
+  },
+  "language": {
+    "vi": "VI",
+    "en": "EN",
+    "switcher": "Language"
+  },
+  "stats": {
+    "analyzedDraws": "Draws analyzed",
+    "lastThirtyDays": "Last 30 days",
+    "latestDraw": "Latest draw",
+    "jackpot1": "Jackpot 1",
+    "jackpot1Hint": "Match all 6 numbers",
+    "jackpot2": "Jackpot 2",
+    "jackpot2Hint": "Match 5 numbers + bonus"
+  },
+  "hero": {
+    "title": "Today's suggestions by prize tier",
+    "orderNote": "ordered from Jackpot 1 down to the easiest tier",
+    "info": "A full 6-number ticket is built for every prize tier from how often numbers appeared in the last 30 days. Suggestions are recomputed daily and do not improve your odds.",
+    "smallSample": "Only {{count}} draws are stored in the last 30 days, so these numbers can change a lot from day to day.",
+    "iconTooltip": "Today's suggested ticket for every prize tier"
+  },
+  "tier": {
+    "conditionLabel": "Condition",
+    "prizeLabel": "Prize",
+    "oddsLabel": "Odds",
+    "fromAmount": "From {{amount}}",
+    "third": {
+      "name": "Third Prize",
+      "short": "Match 3",
+      "rule": "Match 3 of 6 numbers",
+      "strategy": "Hot group: the 6 numbers with the highest frequency among the top 12.",
+      "tooltip": "Match 3 of the 6 main numbers. Prize: 50,000 VND. Red-ringed balls are the 3 most frequent numbers in the last 30 days."
+    },
+    "second": {
+      "name": "Second Prize",
+      "short": "Match 4",
+      "rule": "Match 4 of 6 numbers",
+      "strategy": "Hot + warm: 4 numbers from the top 12, plus 2 with mid-range frequency.",
+      "tooltip": "Match 4 of the 6 main numbers. Prize: 500,000 VND. Red-ringed balls are the 4 numbers scoring highest on frequency and recency."
+    },
+    "first": {
+      "name": "First Prize",
+      "short": "Match 5",
+      "rule": "Match 5 of 6 numbers",
+      "strategy": "Hot + overdue: 3 hot numbers, 2 absent the longest, 1 picked by frequency.",
+      "tooltip": "Match 5 of the 6 main numbers. Prize: 40,000,000 VND. Red-ringed balls combine frequency, recency and pairing."
+    },
+    "jackpot2": {
+      "name": "Jackpot 2",
+      "short": "Match 5 + bonus",
+      "rule": "Match 5 numbers + the bonus",
+      "strategy": "Balanced: 3 odd / 3 even and 3 low / 3 high, plus the most frequent bonus number.",
+      "tooltip": "Match 5 main numbers + the Power (bonus) number. From 3 billion VND. The gold ball is the most frequent bonus number in the last 30 days."
+    },
+    "jackpot1": {
+      "name": "Jackpot 1",
+      "short": "Match 6",
+      "rule": "Match all 6 numbers",
+      "strategy": "Evenly spread: picked by frequency and balance, with a total in the usual range.",
+      "tooltip": "Match all 6 main numbers. From 30 billion VND. All 6 balls combine frequency, recency and pairing."
+    },
+    "badgeTooltip": "Tier {{order}} of 5 ({{badge}}), ordered by prize value"
+  },
+  "top6": {
+    "title": "Top 6 most frequent numbers",
+    "subtitle": "In the last {{count}} draws",
+    "info": "Based only on the last 30 days of stored draws, with no period filter. With about 13 draws, ties and big day-to-day changes are normal.",
+    "tieNote": "On a tie, the more recently drawn number ranks higher. Select a number to filter the history table.",
+    "iconTooltip": "The six most frequently drawn numbers"
+  },
+  "chart": {
+    "frequencyTitle": "Number frequency",
+    "frequencySubtitle": "How many times each number 01–55 was drawn. Click a bar to filter the history.",
+    "frequencyInfo": "Counts cover the last 30 days only. Frequency describes the past; it does not make a number more likely to appear.",
+    "frequencyTooltip": "Number {{n}}: {{count}} times, last seen {{lastSeen}}",
+    "expectedShort": "Avg",
+    "legendTop6": "Top 6",
+    "legendOthers": "Other numbers",
+    "legendActive": "Filtering",
+    "legendExpected": "Expected average",
+    "dataset": {
+      "main": "Main numbers",
+      "bonus": "Bonus"
+    },
+    "sort": {
+      "natural": "1→55",
+      "frequency": "By frequency"
+    },
+    "iconTooltip": "How often each number was drawn in the stored window"
+  },
+  "community": {
+    "title": "Community picks (24h)",
+    "subtitle": "{{count}} tickets submitted in the last 24 hours",
+    "subtitleLoading": "Loading community picks…",
+    "info": "Pick your 6 numbers and submit them. Each IP address keeps one ticket: submitting again replaces your previous one. The ranking counts every ticket submitted in the last 24 hours. Your IP is only stored as a salted hash.",
+    "iconTooltip": "Numbers other players picked in the last 24 hours",
+    "pickTitle": "Choose 6 numbers (01–55)",
+    "selected": "{{count}}/{{max}} selected",
+    "quickPick": "Quick pick",
+    "clear": "Clear",
+    "submit": "Submit ticket",
+    "replace": "Replace my ticket",
+    "submitting": "Submitting…",
+    "submitted": "Your ticket was saved.",
+    "submitError": "Could not submit: {{error}}",
+    "yourTicket": "Your ticket (this IP)",
+    "submittedAt": "Submitted {{time}}",
+    "replaceNote": "Submitting a new ticket replaces this one and restarts its 24-hour window.",
+    "topTitle": "Top 6 most picked",
+    "votes_one": "pick",
+    "votes_other": "picks",
+    "empty": "No tickets in the last 24 hours yet. Be the first!",
+    "loadError": "Could not load community picks.",
+    "topNote": "% = share of tickets that include the number. On a tie, the lower number ranks higher. Popular picks are not more likely to be drawn."
+  },
+  "table": {
+    "title": "Draw history",
+    "showing": "Showing {{shown}}/{{total}} draws",
+    "drawId": "Draw",
+    "date": "Date",
+    "numbers": "Winning numbers",
+    "bonus": "Bonus",
+    "jackpot1": "Jackpot 1",
+    "jackpot2": "Jackpot 2",
+    "search": "Filter by number",
+    "searchPlaceholder": "Filter by number, e.g. 7 23",
+    "filterContains": "Contains",
+    "rangeDays": "{{count}} days",
+    "newestFirst": "Newest first",
+    "oldestFirst": "Oldest first",
+    "match": {
+      "any": "Has any",
+      "all": "Has all"
+    },
+    "empty": "No draws match the current filters.",
+    "iconTooltip": "Every stored draw, newest first",
+    "sortTooltip": "Toggle between newest and oldest first"
+  },
+  "banner": {
+    "stale": "Results may be out of date.",
+    "error": "We couldn't load the latest results. Showing the last known data.",
+    "retry": "Retry"
+  },
+  "state": {
+    "loading": "Loading results…"
+  },
+  "disclaimer": "For entertainment and statistics only. This is not an official Vietlott site. Every Power 6/55 draw is independent and random: past frequency does not change the probability of any number, and the suggestions here do not improve your chance of winning. Always check results on official channels and play responsibly (18+).",
+  "footer": {
+    "dataSource": "Data source: vietlott.vn",
+    "responsibleGaming": "Play responsibly; 18+.",
+    "refreshedAt": "Refreshed at: {{time}}"
+  },
+  "aria": {
+    "numberBall": "Number {{n}}, {{role}}",
+    "roleCore": "core pick",
+    "roleFiller": "filler pick",
+    "roleBonus": "bonus pick",
+    "aboutTier": "About {{tier}}"
+  },
+  "rationale": {
+    "topFreq": "Core = {{k}} most frequent numbers in the last {{draws}} draws ({{nums}})."
+  },
+  "disclaimer_icon": "Important information"
+}

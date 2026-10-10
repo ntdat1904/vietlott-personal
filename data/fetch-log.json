@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "runs": [
+    {
+      "at": "2026-10-10T04:37:44.302Z",
+      "status": "partial",
+      "newDraws": 0,
+      "message": "vietlott.vn unavailable after 3 retries: https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-655"
+    },
+    {
+      "at": "2026-10-10T04:33:22.137Z",
+      "status": "partial",
+      "newDraws": 0,
+      "message": "vietlott.vn unavailable after 3 retries: https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-655"
+    },
+    {
+      "at": "2026-10-10T04:29:30.812Z",
+      "status": "ok",
+      "newDraws": 8,
+      "message": null
+    },
+    {
+      "at": "2026-10-10T04:28:35.624Z",
+      "status": "ok",
+      "newDraws": 0,
+      "message": null
+    },
+    {
+      "at": "2026-10-10T14:00:30Z",
+      "status": "ok",
+      "newDraws": 0,
+      "message": null
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "windowDays": 30,
+  "drawCount": 8,
+  "tiers": [
+    {
+      "tierId": "third",
+      "order": 5,
+      "numbers": [
+        1,
+        4,
+        7,
+        12,
+        13,
+        52
+      ],
+      "core": [
+        13,
+        52,
+        1
+      ],
+      "rationale": {
+        "key": "rationale.topFreq",
+        "params": {
+          "k": 3,
+          "draws": 8,
+          "nums": "01, 13, 52"
+        }
+      }
+    },
+    {
+      "tierId": "second",
+      "order": 4,
+      "numbers": [
+        1,
+        7,
+        13,
+        18,
+        27,
+        52
+      ],
+      "core": [
+        13,
+        7,
+        1,
+        52
+      ],
+      "rationale": {
+        "key": "rationale.topFreq",
+        "params": {
+          "k": 4,
+          "draws": 8,
+          "nums": "01, 07, 13, 52"
+        }
+      }
+    },
+    {
+      "tierId": "first",
+      "order": 3,
+      "numbers": [
+        1,
+        7,
+        11,
+        13,
+        18,
+        52
+      ],
+      "core": [
+        13,
+        52,
+        7,
+        1,
+        18
+      ],
+      "rationale": {
+        "key": "rationale.topFreq",
+        "params": {
+          "k": 5,
+          "draws": 8,
+          "nums": "01, 07, 13, 18, 52"
+        }
+      }
+    },
+    {
+      "tierId": "jackpot2",
+      "order": 2,
+      "numbers": [
+        1,
+        7,
+        13,
+        18,
+        27,
+        52
+      ],
+      "core": [
+        13,
+        7,
+        1,
+        52,
+        18
+      ],
+      "bonusPick": 6,
+      "rationale": {
+        "key": "rationale.topFreq",
+        "params": {
+          "k": 5,
+          "draws": 8,
+          "nums": "01, 07, 13, 18, 52"
+        }
+      }
+    },
+    {
+      "tierId": "jackpot1",
+      "order": 1,
+      "numbers": [
+        1,
+        7,
+        13,
+        18,
+        27,
+        52
+      ],
+      "core": [
+        1,
+        7,
+        52,
+        13,
+        18,
+        27
+      ],
+      "rationale": {
+        "key": "rationale.topFreq",
+        "params": {
+          "k": 6,
+          "draws": 8,
+          "nums": "01, 07, 13, 18, 27, 52"
+        }
+      }
+    }
+  ]
+}

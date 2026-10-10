@@ -1,0 +1,44 @@
+name: cleanup-artifacts
+
+# Actions artifact storage is a hard quota: once it is full, every upload fails
+# with "Artifact storage quota has been hit" - including the Pages artifact that
+# `deploy` needs. This purges old artifacts so that never happens.
+on:
+  schedule:
+    - cron: '30 13 * * *' # daily, 30 min before fetch-data
+  workflow_dispatch:
+    inputs:
+      max_age_hours:
+        description: 'Delete artifacts older than this many hours (0 = delete all)'
+        default: '24'
+
+permissions:
+  actions: write
+
+concurrency:
+  group: cleanup-artifacts
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete old artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MAX_AGE_HOURS: ${{ inputs.max_age_hours || '24' }}
+        run: |
+          set -euo pipefail
+          cutoff=$(date -u -d "$MAX_AGE_HOURS hours ago" +%s)
+          deleted=0
+          kept=0
+          while IFS=$'\t' read -r id created name; do
+            if [ "$(date -u -d "$created" +%s)" -lt "$cutoff" ]; then
+              echo "deleting $name ($id, $created)"
+              gh api -X DELETE "repos/$GITHUB_REPOSITORY/actions/artifacts/$id" && deleted=$((deleted + 1)) || true
+            else
+              kept=$((kept + 1))
+            fi
+          done < <(gh api --paginate "repos/$GITHUB_REPOSITORY/actions/artifacts?per_page=100" \
+                     --jq '.artifacts[] | select(.expired == false) | [.id, .created_at, .name] | @tsv')
+          echo "deleted=$deleted kept=$kept" >> "$GITHUB_STEP_SUMMARY"

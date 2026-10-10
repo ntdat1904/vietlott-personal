@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+@layer components {
+  /* Panel surface used by every section card in the mockup. */
+  .panel {
+    @apply rounded-2xl border border-slate-800 bg-slate-900;
+  }
+  .panel-title {
+    @apply text-base font-bold text-white;
+  }
+  .panel-subtitle {
+    @apply text-xs text-slate-400;
+  }
+  /* Small rounded icon tile that sits left of each section title. */
+  .section-icon {
+    @apply flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-800;
+  }
+  .chip {
+    @apply rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors;
+  }
+  .chip-on {
+    @apply bg-rose-600 text-white;
+  }
+  .chip-off {
+    @apply bg-slate-800 text-slate-300 hover:bg-slate-700;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
