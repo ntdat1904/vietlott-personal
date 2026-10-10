@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "windowDays": 30,
   "drawCount": 8,
   "tiers": [
@@ -9,23 +9,23 @@
       "order": 5,
       "numbers": [
         1,
-        4,
         7,
-        12,
+        11,
         13,
+        18,
         52
       ],
       "core": [
         13,
-        52,
-        1
+        1,
+        7
       ],
       "rationale": {
         "key": "rationale.topFreq",
         "params": {
           "k": 3,
           "draws": 8,
-          "nums": "01, 13, 52"
+          "nums": "01, 07, 13"
         }
       }
     },
@@ -43,8 +43,8 @@
       "core": [
         13,
         7,
-        1,
-        52
+        52,
+        1
       ],
       "rationale": {
         "key": "rationale.topFreq",
@@ -68,8 +68,8 @@
       ],
       "core": [
         13,
-        52,
         7,
+        52,
         1,
         18
       ],
@@ -95,9 +95,9 @@
       ],
       "core": [
         13,
-        7,
-        1,
         52,
+        1,
+        7,
         18
       ],
       "bonusPick": 6,
@@ -122,12 +122,12 @@
         52
       ],
       "core": [
-        1,
         7,
+        1,
         52,
         13,
-        18,
-        27
+        27,
+        18
       ],
       "rationale": {
         "key": "rationale.topFreq",
