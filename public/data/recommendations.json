@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "windowDays": 30,
   "drawCount": 8,
   "tiers": [
@@ -18,14 +18,14 @@
       "core": [
         13,
         1,
-        7
+        18
       ],
       "rationale": {
         "key": "rationale.topFreq",
         "params": {
           "k": 3,
           "draws": 8,
-          "nums": "01, 07, 13"
+          "nums": "01, 13, 18"
         }
       }
     },
@@ -42,9 +42,9 @@
       ],
       "core": [
         13,
+        1,
         7,
-        52,
-        1
+        52
       ],
       "rationale": {
         "key": "rationale.topFreq",
@@ -122,8 +122,8 @@
         52
       ],
       "core": [
-        7,
         1,
+        7,
         52,
         13,
         27,
